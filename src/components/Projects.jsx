@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import projectsData from "../data.json";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, showLiveUrl = true }) => {
   return (
     <div className="max-w-sm rounded-xl overflow-hidden shadow-lg bg-[rgb(187,237,47)] transition-all duration-300 hover:shadow-2xl hover:scale-105">
       <img
@@ -25,44 +25,69 @@ const ProjectCard = ({ project }) => {
             <FaGithub className="inline mr-1" /> GitHub
           </a>
         )}
-        <a
-          href={project.liveUrl}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-block bg-black rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 hover:bg-slate-500"
-        >
-          <FaExternalLinkAlt className="inline mr-1" /> Visitar
-        </a>
+        {showLiveUrl && project.liveUrl && (
+          <a
+            href={project.liveUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-black rounded-full px-3 py-1 text-sm font-semibold text-white mr-2 mb-2 hover:bg-slate-500"
+          >
+            <FaExternalLinkAlt className="inline mr-1" /> Visitar
+          </a>
+        )}
       </div>
     </div>
   );
 };
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
+  const [webProjects, setWebProjects] = useState([]);
+  const [malaga42Projects, setMalaga42Projects] = useState([]);
+  const [codeCryptoProjects, setCodeCryptoProjects] = useState([]);
 
   useEffect(() => {
-    setProjects(projectsData);
+    setWebProjects(projectsData.webProjects);
+    setMalaga42Projects(projectsData.malaga42Projects);
+    setCodeCryptoProjects(projectsData.codeCryptoProjects);
   }, []);
 
   return (
     <section id="projects" className="py-12 bg-black">
       <div className="container px-10">
         <h2 className="text-white text-3xl font-bold mb-8">Mis Proyectos</h2>
+
         <h3 className="text-white text-2xl font-bold mb-6">Web</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {webProjects.map((project) => (
             <ProjectCard key={project.id} project={project} />
           ))}
         </div>
+
         <h3 className="text-white text-2xl font-bold my-6">
           42Málaga Fundación Telefónica
         </h3>
-        <div></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {malaga42Projects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              showLiveUrl={false}
+            />
+          ))}
+        </div>
+
         <h3 className="text-white text-2xl font-bold my-6">
-          Ingeniero Blockchain CodeCrypto
+          Master Ingeniero Blockchain - CodeCrypto
         </h3>
-        <div></div>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {codeCryptoProjects.map((project) => (
+            <ProjectCard
+              key={project.id}
+              project={project}
+              showLiveUrl={false}
+            />
+          ))}
+        </div>
       </div>
     </section>
   );
