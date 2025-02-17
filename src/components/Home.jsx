@@ -3,6 +3,8 @@ import { Header } from "./Header";
 import { Navbar } from "./Navbar";
 import { Bio } from "./Bio";
 import Projects from "./Projects";
+import Skills from "./Skills";
+import Footer from "./Footer";
 
 export function Home() {
   return (
@@ -11,6 +13,8 @@ export function Home() {
       <Navbar />
       <Bio />
       <Projects />
+      <Skills />
+      <Footer />
     </div>
   );
 }
