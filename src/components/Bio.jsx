@@ -21,7 +21,7 @@ export function Bio() {
           </div>
           <div className="mt-8 md:mt-0 lg:mr-24 ">
             <img
-              src="/src/assets/modular-blockchain.jpeg"
+              src="https://i.postimg.cc/5tBDjhSS/modular-blockchain.jpg"
               className="rounded-3xl w-[400px]"
             />
           </div>
