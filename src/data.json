@@ -78,7 +78,7 @@
       "id": 1,
       "title": "42Málaga Cursus",
       "description": "Proyectos realizados durante mi formación en 42Málaga Fundación Telefónica",
-      "image": "/src/assets/42-Malaga-300x100.png",
+      "image": "https://postimg.cc/fJBzcGjp",
       "githubUrl": "https://github.com/aguorcha/42_Cursus"
     }
   ],
