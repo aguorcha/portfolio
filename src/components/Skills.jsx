@@ -51,7 +51,7 @@ const Skills = () => {
       <div className="absolute inset-0 bg-black" />
       <div className="container relative mx-auto px-4">
         <h2 className="text-3xl font-bold text-white mb-12 flex justify-center">
-          Mis Habilidades
+          Habilidades
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 mb-10">
           {skills.map((skill, index) => (

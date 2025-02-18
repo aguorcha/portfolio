@@ -14,13 +14,13 @@ export function Bio() {
             <h2 className="text-4xl xl:text-5xl mb-4 animate__animated animate__fadeInUpBig">
               Hola, me llamo Agustín Orcha
             </h2>
-            <p className="mb-4">
+            <p className="mb-6">
               Estoy especializado en el desarrollo Web Frontend. Tengo
               habilidades en HTML5, CSS3, TailwindCSS, JavaScript, TypeScript,
               Vue.js y React.js. Además soy apasionado de la tecnología
               blockchain y Web3.
             </p>
-            <div className="flex space-x-4 mb-4">
+            <div className="flex space-x-4 mb-6">
               <a
                 href="https://www.linkedin.com/in/agustin-orcha-web3/"
                 target="_blank"
@@ -38,9 +38,15 @@ export function Bio() {
                 <FaGithub className="text-3xl" />
               </a>
             </div>
-            <Button className="bg-[rgb(187,237,47)] text-black hover:bg-[rgb(158,203,34)] rounded-2xl">
-              Contáctame
-            </Button>
+            <a
+              href="/src/assets/CV Agustín Orcha - Web developer.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button className="bg-[rgb(187,237,47)] text-black hover:bg-[rgb(158,203,34)] rounded-2xl">
+                Ver CV
+              </Button>
+            </a>
           </div>
           <div className="flex justify-center md:justify-end w-full md:w-1/2 mt-8 md:mt-0">
             <div className="relative w-full max-w-[400px] aspect-square">

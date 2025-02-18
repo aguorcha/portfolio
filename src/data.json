@@ -1,5 +1,5 @@
 {
-  "webProjects": [
+  "projects": [
     {
       "id": 1,
       "title": "Andalucía Social",
@@ -10,6 +10,20 @@
     },
     {
       "id": 2,
+      "title": "42Málaga Cursus",
+      "description": "Proyectos realizados durante mi formación en 42Málaga Fundación Telefónica",
+      "image": "https://i.postimg.cc/fRhVNZ3z/42-Malaga-300x100.png",
+      "githubUrl": "https://github.com/aguorcha/42_Cursus"
+    },
+    {
+      "id": 3,
+      "title": "CodeCrypto",
+      "description": "Proyectos realizados durante el Master de Ingeniero Blockchain",
+      "image": "https://i.postimg.cc/1X5kkv6c/codecrypto2.png",
+      "githubUrl": "https://github.com/aguorcha/codecrypto-project"
+    },
+    {
+      "id": 4,
       "title": "Crowdfund",
       "description": "Ejercicio Frontend Mentor. Aplicación de simulación de crowdfunding",
       "image": "https://i.postimg.cc/3xDsQ4y6/crowdfund.png",
@@ -17,7 +31,7 @@
       "liveUrl": "https://crowdfund-pink.vercel.app/"
     },
     {
-      "id": 3,
+      "id": 5,
       "title": "Interactive Pricing Component",
       "description": "Ejercicio Frontend Mentor. Componente de selección de precios dinámicos a través de un slider",
       "image": "https://i.postimg.cc/MKXktrzz/interactive-pricing-component.png",
@@ -25,7 +39,7 @@
       "liveUrl": "https://interactive-pricing-component-gamma-sandy.vercel.app/"
     },
     {
-      "id": 4,
+      "id": 6,
       "title": "Advice Slip",
       "description": "Ejercicio Frontend Mentor. Aplicación que consume una API para mostrar consejos",
       "image": "https://i.postimg.cc/Kjq6xtDX/advice-slip.png",
@@ -33,7 +47,7 @@
       "liveUrl": "https://aguorcha.github.io/advice-slip/"
     },
     {
-      "id": 5,
+      "id": 7,
       "title": "Coding Bootcamp",
       "description": "Ejercicio de Frontend Mentor. Carrusel dinámico imágenes y descripciones de perfil",
       "image": "https://i.postimg.cc/X7PRPcvd/coding-bootcamp.png",
@@ -41,7 +55,7 @@
       "liveUrl": "https://coding-bootcamp-nu.vercel.app/"
     },
     {
-      "id": 6,
+      "id": 8,
       "title": "Loopstudios",
       "description": "Ejercicio Frontend Mentor. Maquetación responsive de Landing Page",
       "image": "https://i.postimg.cc/R05jSSK0/loopstudios.png",
@@ -49,7 +63,7 @@
       "liveUrl": "https://loopstudios-navy-six.vercel.app/"
     },
     {
-      "id": 7,
+      "id": 9,
       "title": "Testimonials",
       "description": "Ejercicio Frontend Mentor. Maquetación responsive de página de testimonios",
       "image": "https://i.postimg.cc/hjMw1VwJ/testimonials.png",
@@ -57,7 +71,7 @@
       "liveUrl": "https://testimonials-section-one.vercel.app/"
     },
     {
-      "id": 8,
+      "id": 10,
       "title": "Splitter Tip Calculator",
       "description": "Ejercicio Frontend Mentor. Calculadora de propinas",
       "image": "https://i.postimg.cc/DZ7HGxCk/splitter-tip-calculator.png",
@@ -65,30 +79,12 @@
       "liveUrl": "https://aguorcha.github.io/splitter-tip-calculator/"
     },
     {
-      "id": 9,
+      "id": 11,
       "title": "Time Tracking Dashboard",
       "description": "Ejercicio Frontend Mentor. Panel de control responsive que muestra el tiempo empleado, en diferentes periodos",
       "image": "https://i.postimg.cc/j251gL0M/time-tracking-dashboard.png",
       "githubUrl": "https://github.com/aguorcha/time-tracking-dashboard",
       "liveUrl": "https://aguorcha.github.io/time-tracking-dashboard/"
-    }
-  ],
-  "malaga42Projects": [
-    {
-      "id": 1,
-      "title": "42Málaga Cursus",
-      "description": "Proyectos realizados durante mi formación en 42Málaga Fundación Telefónica",
-      "image": "https://i.postimg.cc/fRhVNZ3z/42-Malaga-300x100.png",
-      "githubUrl": "https://github.com/aguorcha/42_Cursus"
-    }
-  ],
-  "codeCryptoProjects": [
-    {
-      "id": 1,
-      "title": "CodeCrypto",
-      "description": "Proyectos realizados durante el Master de Ingeniero Blockchain",
-      "image": "https://i.postimg.cc/1X5kkv6c/codecrypto2.png",
-      "githubUrl": "https://github.com/aguorcha/codecrypto-project"
     }
   ]
 }

@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import projectsData from "../data.json";
 
-const ProjectCard = ({ project, showLiveUrl = true }) => {
+const ProjectCard = ({ project }) => {
   return (
     <div className="sm:max-w-sm text-white flex flex-col justify-between card overflow-hidden transform transition duration-300 hover:scale-105">
       <img
@@ -41,63 +41,19 @@ const ProjectCard = ({ project, showLiveUrl = true }) => {
 };
 
 const Projects = () => {
-  const [webProjects, setWebProjects] = useState([]);
-  const [malaga42Projects, setMalaga42Projects] = useState([]);
-  const [codeCryptoProjects, setCodeCryptoProjects] = useState([]);
+  const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    setWebProjects(projectsData.webProjects);
-    setMalaga42Projects(projectsData.malaga42Projects);
-    setCodeCryptoProjects(projectsData.codeCryptoProjects);
+    setProjects(projectsData.projects);
   }, []);
 
   return (
     <section id="projects" className="pb-44 py-12 bg-projects-gradient">
       <div className="container px-10 flex flex-col items-center">
-        <h2 className="text-white text-3xl font-bold my-8">Mis Proyectos</h2>
-
-        <h3 className="text-white text-2xl font-bold mb-10">Web</h3>
+        <h2 className="text-white text-3xl font-bold my-8">Proyectos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">
-          {webProjects.map((project) => (
+          {projects.map((project) => (
             <ProjectCard key={project.id} project={project} />
-          ))}
-        </div>
-
-        <h3 className="text-white text-2xl font-bold mt-20 mb-10">
-          42Málaga Fundación Telefónica
-        </h3>
-        <div
-          className={`grid grid-cols-1 gap-20 ${
-            malaga42Projects.length === 1
-              ? "flex justify-center items-center"
-              : "md:grid-cols-2 lg:grid-cols-3"
-          }`}
-        >
-          {malaga42Projects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              showLiveUrl={false}
-            />
-          ))}
-        </div>
-
-        <h3 className="text-white text-2xl font-bold mt-20 mb-10">
-          Master Ingeniero Blockchain
-        </h3>
-        <div
-          className={`grid grid-cols-1 gap-20 ${
-            codeCryptoProjects.length === 1
-              ? "flex justify-center items-center"
-              : "md:grid-cols-2 lg:grid-cols-3"
-          }`}
-        >
-          {codeCryptoProjects.map((project) => (
-            <ProjectCard
-              key={project.id}
-              project={project}
-              showLiveUrl={false}
-            />
           ))}
         </div>
       </div>
