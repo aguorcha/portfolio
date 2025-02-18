@@ -39,7 +39,7 @@ export function Bio() {
               </a>
             </div>
             <a
-              href="/src/assets/CV Agustín Orcha - Web developer.pdf"
+              href="/public/CV Agustín Orcha - Web developer.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
