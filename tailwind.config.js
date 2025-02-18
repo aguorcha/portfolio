@@ -6,6 +6,12 @@ export default {
   content: ["app/**/*.{ts,tsx}", "components/**/*.{ts,tsx}", "./index.html", "./src/**/*.{js,ts,jsx,tsx}", "*.{js,ts,jsx,tsx,mdx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'bio-gradient': 'linear-gradient(0deg, rgba(33,33,33,1) 0%, rgba(0,0,0,1) 5%, rgba(0,0,0,1) 100%)',
+        'projects-gradient': 'linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(33,33,33,1) 5%, rgba(33,33,33,1) 100%)',
+        'footer-gradient': 'linear-gradient(0deg, rgba(187,237,47,1) 0%, rgba(187,237,47,1) 78%, rgba(0,0,0,1) 100%)',
+
+      },
       colors: {
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',

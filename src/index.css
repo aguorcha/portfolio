@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: hsl(0, 0%, 100%);
@@ -75,5 +75,16 @@
   }
   .hover-green:hover {
     color: #BBED2F;
+  }
+  .animate__animated.animate__backInUp {
+    --animate-duration: 0.85s;
+  }
+  .card {
+    width: 300px;
+    height: auto;
+    border-radius: 30px;
+    background: #212121;
+    box-shadow: 15px 15px 30px rgb(25, 25, 25),
+                -15px -15px 30px rgb(60, 60, 60);
   }
 }
