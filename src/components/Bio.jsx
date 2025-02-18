@@ -39,7 +39,7 @@ export function Bio() {
               </a>
             </div>
             <a
-              href="/public/CVAgustínOrchaWebDeveloper.pdf"
+              href="/CVAgustínOrchaWebDeveloper.pdf"
               target="_blank"
               rel="noopener noreferrer"
             >
