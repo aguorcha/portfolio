@@ -48,7 +48,7 @@ const Projects = () => {
   }, []);
 
   return (
-    <section id="projects" className="pb-44 py-12 bg-projects-gradient">
+    <section id="projects" className="pb-44 py-16 bg-projects-gradient">
       <div className="container px-10 flex flex-col items-center">
         <h2 className="text-white text-3xl font-bold my-8">Proyectos</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20">

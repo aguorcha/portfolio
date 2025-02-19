@@ -25,7 +25,7 @@ export function Header() {
   };
 
   return (
-    <nav className="bg-black p-4 sticky top-0 z-50">
+    <nav className="bg-black px-4 sticky top-0 z-50">
       <div className="flex justify-between items-center lg:mx-8">
         <img
           onClick={scrollToTop}
