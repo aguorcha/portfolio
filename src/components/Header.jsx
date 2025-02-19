@@ -26,13 +26,12 @@ export function Header() {
 
   return (
     <nav className="bg-black p-4 sticky top-0 z-50">
-      <div className="flex justify-between lg:mx-8">
-        <p
+      <div className="flex justify-between items-center lg:mx-8">
+        <img
           onClick={scrollToTop}
-          className="text-white font-bold cursor-pointer transition-colors duration-300 hover:text-[rgb(187,237,47)]"
-        >
-          aguorcha
-        </p>
+          className="w-20 cursor-pointer"
+          src="/logo.png"
+        ></img>
         <ul className="flex justify-end space-x-8 text-white">
           <li>
             <a

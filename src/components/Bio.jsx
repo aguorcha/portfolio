@@ -8,7 +8,7 @@ export function Bio() {
       id="bio"
       className="bg-bio-gradient text-white p-8 pb-20 lg:h-screen"
     >
-      <div className="container mt-10 px-0 lg:px-44">
+      <div className="container mt-0 md:mt-6 px-0 lg:px-44">
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div className="md:w-1/2 md:pr-8">
             <h2 className="text-4xl xl:text-5xl mb-4 animate__animated animate__fadeInUpBig">
@@ -62,7 +62,7 @@ export function Bio() {
                 <img
                   src="https://i.postimg.cc/QNc43vJ8/DSCF3640.jpg"
                   alt="Agustín Orcha"
-                  className="w-full h-full object-cover animate__animated animate__fadeInDownBig"
+                  className="w-full h-full object-cover animate__animated animate__fadeIn"
                 />
               </div>
             </div>

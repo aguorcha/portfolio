@@ -76,8 +76,11 @@
   .hover-green:hover {
     color: #BBED2F;
   }
-  .animate__animated.animate__backInUp {
-    --animate-duration: 0.85s;
+  .animate__animated.animate__fadeInUpBig {
+    --animate-duration: 2s;
+  }
+  .animate__animated.animate__fadeIn {
+    --animate-duration: 1.5s;
   }
   .card {
     width: 300px;

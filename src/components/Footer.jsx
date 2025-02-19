@@ -4,7 +4,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <footer className="bg-footer-gradient text-black py-8 h-36 flex justify-center items-center">
+    <footer className="bg-[rgb(187,237,47)] text-black py-8 h-36 flex justify-center items-center">
       <div className="container mx-auto px-20 mt-8">
         <div className="flex flex-col md:flex-row justify-between items-center">
           <div className="flex space-x-4 mb-4 md:mb-0">
