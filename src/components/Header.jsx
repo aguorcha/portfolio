@@ -29,7 +29,7 @@ export function Header() {
       <div className="flex justify-between items-center lg:mx-8">
         <img
           onClick={scrollToTop}
-          className="w-20 cursor-pointer"
+          className="w-20 cursor-pointer rounded-full"
           src="/logo.png"
         ></img>
         <ul className="flex justify-end space-x-8 text-white">
