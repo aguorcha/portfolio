@@ -17,8 +17,8 @@ export function Bio() {
             <p className="mb-6">
               Estoy especializado en el desarrollo Web Frontend. Tengo
               habilidades en HTML5, CSS3, TailwindCSS, JavaScript, TypeScript,
-              Vue.js y React.js. Además soy apasionado de la tecnología
-              blockchain y Web3.
+              Vue.js, React.js y Accesibilidad Web. Además soy apasionado de la
+              tecnología blockchain y Web3.
             </p>
             <div className="flex space-x-4 mb-6">
               <a
