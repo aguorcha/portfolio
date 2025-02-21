@@ -1,4 +1,5 @@
 import React from "react";
+import { useTranslation } from "react-i18next";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -27,6 +28,8 @@ const SkillIcon = ({ icon: Icon, name, color }) => (
 );
 
 const Skills = () => {
+  const { t } = useTranslation();
+
   const skills = [
     { icon: FaHtml5, name: "HTML5", color: "text-orange-500" },
     { icon: FaCss3Alt, name: "CSS3", color: "text-blue-500" },
@@ -40,7 +43,7 @@ const Skills = () => {
     { icon: FaNpm, name: "npm", color: "text-red-500" },
     { icon: SiWebpack, name: "Webpack", color: "text-blue-500" },
     { icon: SiVite, name: "Vite.js", color: "text-purple-500" },
-    { icon: FaAccessibleIcon, name: "A11y", color: "text-green-600" },
+    { icon: FaAccessibleIcon, name: "Accesibility", color: "text-green-600" },
     { icon: FaGitAlt, name: "Git", color: "text-orange-500" },
     { icon: FaGithub, name: "GitHub", color: "text-gray-400" },
     { icon: FaDocker, name: "Docker", color: "text-blue-500" },
@@ -51,7 +54,7 @@ const Skills = () => {
       <div className="absolute inset-0 bg-skills-gradient" />
       <div className="container relative mx-auto px-4">
         <h2 className="text-3xl font-bold text-white pt-10 mb-8 flex justify-center">
-          Habilidades
+          {t("Skills")}
         </h2>
         <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 mb-10">
           {skills.map((skill, index) => (

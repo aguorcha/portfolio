@@ -1,8 +1,17 @@
 import { Button } from "@/components/ui/button";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import "animate.css";
+import { useTranslation } from "react-i18next";
 
 export function Bio() {
+  const { t, i18n } = useTranslation();
+
+  const getCVPath = () => {
+    return i18n.language === "es"
+      ? "/CVAgustinOrchaWebDeveloper_ES.pdf"
+      : "/CVAgustinOrchaWebDeveloper_EN.pdf";
+  };
+
   return (
     <section
       id="bio"
@@ -12,14 +21,9 @@ export function Bio() {
         <div className="flex flex-col md:flex-row md:items-center md:justify-between">
           <div className="md:w-1/2 md:pr-8">
             <h2 className="text-4xl xl:text-5xl mb-4 animate__animated animate__fadeInUpBig">
-              Hola, me llamo Agustín Orcha
+              {t("greeting")}
             </h2>
-            <p className="mb-6">
-              Estoy especializado en el desarrollo Web Frontend. Tengo
-              habilidades en HTML5, CSS3, TailwindCSS, JavaScript, TypeScript,
-              Vue.js, React.js y Accesibilidad Web. Además soy apasionado de la
-              tecnología blockchain y Web3.
-            </p>
+            <p className="mb-6">{t("bio")}</p>
             <div className="flex space-x-4 mb-6">
               <a
                 href="https://www.linkedin.com/in/agustin-orcha-web3/"
@@ -38,13 +42,9 @@ export function Bio() {
                 <FaGithub className="text-3xl" />
               </a>
             </div>
-            <a
-              href="/CVAgustínOrchaWebDeveloper.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={getCVPath()} target="_blank" rel="noopener noreferrer">
               <Button className="bg-[rgb(187,237,47)] text-black hover:bg-[rgb(158,203,34)] rounded-2xl">
-                Ver CV
+                {t("viewCV")}
               </Button>
             </a>
           </div>
@@ -60,7 +60,7 @@ export function Bio() {
                 }}
               >
                 <img
-                  src="https://i.postimg.cc/QNc43vJ8/DSCF3640.jpg"
+                  src="DSCF3640.jpg"
                   alt="Agustín Orcha"
                   className="w-full h-full object-cover animate__animated animate__fadeIn"
                 />

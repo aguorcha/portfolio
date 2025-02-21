@@ -1,8 +1,11 @@
 import React from "react";
 import { FaLinkedin, FaGithub, FaHeart } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-[rgb(187,237,47)] text-black py-8 h-36 flex justify-center items-center">
       <div className="container mx-auto px-20 mt-8">
@@ -32,9 +35,9 @@ const Footer = () => {
           </div>
 
           <div className="flex items-center">
-            <span className="mr-2">Hecho con</span>
+            <span className="mr-2">{t("made")}</span>
             <FaHeart className="text-xl mr-2" />
-            <span>y React</span>
+            <span>{t("and")}</span>
           </div>
         </div>
       </div>

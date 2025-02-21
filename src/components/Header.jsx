@@ -1,6 +1,10 @@
 import { useCallback } from "react";
+import { useTranslation } from "react-i18next";
+import LanguageSelector from "./LanguageSelector";
 
 export function Header() {
+  const { t } = useTranslation();
+
   const scrollToSection = useCallback((elementId) => {
     const element = document.getElementById(elementId);
     if (element) {
@@ -31,15 +35,16 @@ export function Header() {
           onClick={scrollToTop}
           className="w-20 cursor-pointer rounded-full"
           src="/logo.png"
-        ></img>
-        <ul className="flex justify-end space-x-8 text-white">
+          alt="Logo"
+        />
+        <ul className="flex justify-end space-x-8 text-white items-center">
           <li>
             <a
               href="#projects"
               onClick={(e) => handleClick(e, "projects")}
               className="transition-colors duration-300 hover:text-[rgb(187,237,47)]"
             >
-              Proyectos
+              {t("Projects")}
             </a>
           </li>
           <li>
@@ -48,8 +53,11 @@ export function Header() {
               onClick={(e) => handleClick(e, "skills")}
               className="transition-colors duration-300 hover:text-[rgb(187,237,47)]"
             >
-              Habilidades
+              {t("Skills")}
             </a>
+          </li>
+          <li>
+            <LanguageSelector />
           </li>
         </ul>
       </div>
