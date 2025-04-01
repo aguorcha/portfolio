@@ -24,6 +24,14 @@
     },
     {
       "id": 4,
+      "titleKey": "extensions.title",
+      "descriptionKey": "extensions.description",
+      "image": "/extensions-manager.png",
+      "githubUrl": "https://github.com/aguorcha/extension-manager",
+      "liveUrl": "https://extension-manager-pi.vercel.app/"
+    },
+    {
+      "id": 5,
       "titleKey": "crowdfund.title",
       "descriptionKey": "crowdfund.description",
       "image": "/crowdfund.png",
@@ -31,7 +39,7 @@
       "liveUrl": "https://crowdfund-pink.vercel.app/"
     },
     {
-      "id": 5,
+      "id": 6,
       "titleKey": "interactivePricing.title",
       "descriptionKey": "interactivePricing.description",
       "image": "/interactive-pricing-component.png",
@@ -39,7 +47,7 @@
       "liveUrl": "https://interactive-pricing-component-gamma-sandy.vercel.app/"
     },
     {
-      "id": 6,
+      "id": 7,
       "titleKey": "adviceSlip.title",
       "descriptionKey": "adviceSlip.description",
       "image": "/advice-slip.png",
@@ -47,7 +55,7 @@
       "liveUrl": "https://aguorcha.github.io/advice-slip/"
     },
     {
-      "id": 7,
+      "id": 8,
       "titleKey": "codingBootcamp.title",
       "descriptionKey": "codingBootcamp.description",
       "image": "/coding-bootcamp.png",
@@ -55,7 +63,7 @@
       "liveUrl": "https://coding-bootcamp-nu.vercel.app/"
     },
     {
-      "id": 8,
+      "id": 9,
       "titleKey": "loopstudios.title",
       "descriptionKey": "loopstudios.description",
       "image": "/loopstudios.png",
@@ -63,7 +71,7 @@
       "liveUrl": "https://loopstudios-navy-six.vercel.app/"
     },
     {
-      "id": 9,
+      "id": 10,
       "titleKey": "testimonials.title",
       "descriptionKey": "testimonials.description",
       "image": "/testimonials.png",
@@ -71,7 +79,7 @@
       "liveUrl": "https://testimonials-section-one.vercel.app/"
     },
     {
-      "id": 10,
+      "id": 11,
       "titleKey": "splitterTipCalculator.title",
       "descriptionKey": "splitterTipCalculator.description",
       "image": "/splitter-tip-calculator.png",
@@ -79,7 +87,7 @@
       "liveUrl": "https://aguorcha.github.io/splitter-tip-calculator/"
     },
     {
-      "id": 11,
+      "id": 12,
       "titleKey": "timeTrackingDashboard.title",
       "descriptionKey": "timeTrackingDashboard.description",
       "image": "/time-tracking-dashboard.png",

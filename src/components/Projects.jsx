@@ -17,7 +17,7 @@ const ProjectCard = ({ project }) => {
         <div className="font-bold text-xl mb-2">{t(project.titleKey)}</div>
         <p className="text-base">{t(project.descriptionKey)}</p>
       </div>
-      <div className="px-6 pt-4 pb-2 flex justify-end mt-auto">
+      <div className="px-6 pt-4 pb-2 flex justify-between mt-auto">
         {project.githubUrl && (
           <a
             href={project.githubUrl}
